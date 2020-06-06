@@ -30,7 +30,8 @@ export const iexApiRequest = async (
 
     return data;
   } catch (error) {
-    console.log(error);
+    // tslint:disable-next-line: no-console
+    console.error(error);
   }
 };
 

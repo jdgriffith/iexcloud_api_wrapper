@@ -40,7 +40,7 @@ export const history = async (
     chartReset?: boolean;
     chartSimplify?: boolean;
   } = {}
-): Promise<Array<EndOfDay | Intraday>> => {
+): Promise<EndOfDay[] | Intraday[]> => {
   const intraday = (!chartByDay && date) || period === "1d" ? true : false;
 
   if (period === "date" && !date) {

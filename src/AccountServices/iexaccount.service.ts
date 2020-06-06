@@ -20,8 +20,6 @@ export const iexApiRequest = async (
     },
   });
 
-  console.log(data);
-
   return data;
 };
 
